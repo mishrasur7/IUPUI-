@@ -1,0 +1,58 @@
+body {
+max-width: 60em;
+margin: 0 auto 0 auto;
+}
+
+table, th, td {
+border-collapse: collapse;
+border: 1px solid #000;
+padding: 1em;
+}
+
+/*changing the background properties for poe.html*/ 
+
+.firstPage {
+    background: oldlace url("../images/image3.jpg") right center;
+}
+
+/*changing the background properties for lenore.html*/ 
+.secondPage {
+    background: lightpink url("../images/image2.jpg"); 
+    font-family: verdana;
+    color: #005637;
+    /*text-shadow: 2px -1px; */
+}
+
+.thirdPage {
+    background-color: skyblue;
+}
+
+/*changing the background property of heading 1 of main page*/ 
+
+.edgar {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tale {
+    width: 1000px;
+    height: 500px;
+    background-image: url("../images/sample-poe-image.jpg");
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+table {
+    background-color: rgb(41, 212, 212);
+    float: right;
+}
+
+.table {
+    text-align: right;
+    margin-right: 150px;
+}
+#lastParagraph {
+    background-color: #f3ff47;
+   /* margin-right: 300px; */ 
+}
