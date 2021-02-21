@@ -1,0 +1,233 @@
+article, aside, details, figcaption, figure, footer, header, menu, nav, section
+	{
+	display: block;
+	}
+
+*	
+	{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	}
+	
+img 
+	{
+	max-width: 100%;
+	padding: 0.5em;
+	}
+	
+body
+	{
+	font-family: verdana, arial, sans-serif;
+	}
+	
+	
+header h1	
+	{
+	font-size: 1.9em;
+	text-align: center;
+	}
+	
+h1	
+	{
+	font-size: 1.5em;
+	}
+
+
+h2	
+	{
+	font-size: 1.2em;
+	text-align: center;
+	}	
+	
+
+
+#container
+	{
+	max-width: 62.5em; 
+	margin-left: auto;
+	margin-right: auto; 
+	}
+	
+/* COLUMNS  -- each page is made up of a number of columns using any combination that = 100 */
+.col_nav
+	{
+	float: left;	
+	width: 20%;
+	padding: 2% 2% 3% 0;
+	}
+		
+.col_content
+	{
+	float: left;
+	width: 60%;
+	padding: 2% 2% 3% 0;
+	}
+	
+.col_intro
+	{
+	float: left;
+	width: 75%;
+	padding: 2% 2% 3% 0;
+	}
+		
+.col_aside
+	{
+	float: left;
+	width: 20%;
+	padding: 2% 2% 3% 0;
+	}		
+		
+
+nav ul
+	{ 
+	padding-left: 0;
+	margin-left: 0;
+	list-style: none;
+	}
+
+nav a
+	{
+	text-decoration: none;
+	color: #000000;
+	}
+
+nav a:visited
+	{
+	color: #ee16a6;
+	}		
+
+nav a:hover
+	{
+	text-decoration: underline;
+	color: #6699ff;
+	}
+
+nav ul li
+	{
+	font-weight: bold;
+	}	
+
+nav ul li a
+	{
+	font-weight: normal;
+	}
+
+
+/* FOOTER STYLES */
+
+footer 
+	{
+	clear: both;
+	}
+
+/* FLOATS */
+
+.left
+	{
+	float: right;
+	margin-right: 1em;
+	}
+	
+
+
+/* 1st BREAKPOINT */
+@media screen and (max-width: 60em) {
+
+body {
+	background-color: yellowgreen;
+}
+	
+.col_nav		/* .col_nav returns at this width and lower to full container width and stops floating  */
+	{
+	width:95%;
+	float: none;
+	color: aqua;
+	}
+	
+.col_content	/* .col_content changes at this width and lower to 70%  */
+	{
+	clear: left;
+	width: 70%;
+	color: blueviolet;
+	}
+	
+.col_intro	/* .col_oration changes at this width and lower to 100%  */
+	{
+	clear: left;
+	width: 100%;
+	color: crimson;
+	}	
+	
+
+.col_aside	/* .col_aside changes at this width and lower to 30%  */
+	{
+	width: 30%;
+	color: darkkhaki;
+	}
+	
+header h1 
+	{
+	font-size: 1.5em;
+	margin-top: 0px;
+	}	
+
+h1 
+	{
+	font-size: 1.2em;
+	margin-top: 0px;
+	}
+		
+h2 
+	{
+	font-size: .9em;
+	margin-top: 0px;
+	}
+	
+
+nav ul li	/* navigation menu at this width becomes horizontal */
+	{
+	float: left;
+	display: inline-block;
+	padding: .5em 1em .5em 1em;
+	border: 1px dotted #000;
+	}
+	
+
+}
+
+
+/* 2nd BREAKPOINT */
+@media screen and (max-width: 50em) {
+body {
+	background-color: royalblue;
+}
+	
+.col_nav		/* columns return at this width and lower to full container width and stop floating  */
+	{
+	width: 100%;
+	float: none;
+	color: darkred;
+	}
+	
+.col_content
+	{
+	width:100%;
+	float: none;
+	color: pink; 
+	}
+	
+.col_intro
+	{
+	width: 100%;
+	float: none;
+	color: red;
+	}
+
+.col_aside	
+	{
+	width: 100%;
+	float: none;
+	color: blue; 
+	}
+	
+}
